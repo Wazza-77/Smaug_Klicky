@@ -65,3 +65,13 @@ origin = https://github.com/ZeroGDesign/zerog-mainsail-theme.git
 install_script = install.sh
 is_system_service = False
 
+[update_manager moonraker-obico]
+type = git_repo
+path = ~/moonraker-obico
+origin = https://github.com/TheSpaghettiDetective/moonraker-obico.git
+env = /home/wazza/moonraker-obico-env/bin/python
+requirements = requirements.txt
+install_script = install.sh
+managed_services = 
+	moonraker-obico
+
